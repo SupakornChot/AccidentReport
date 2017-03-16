@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="156" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="134" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                              <Component id="wait" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
+                              <Component id="recieved" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
+                              <Component id="operate" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                              <Component id="sendDepartment" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                                  <Component id="accidentName" min="-2" pref="138" max="-2" attributes="0"/>
+                                  <Component id="statusBar" min="-2" pref="391" max="-2" attributes="0"/>
+                                  <Component id="statusBackHome" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace pref="134" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+              <Component id="accidentName" min="-2" pref="31" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="statusBar" min="-2" pref="35" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="wait" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="sendDepartment" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="operate" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="recieved" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+              <Component id="statusBackHome" min="-2" pref="38" max="-2" attributes="0"/>
+              <EmptySpace pref="174" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+    </Component>
+    <Component class="javax.swing.JLabel" name="accidentName">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#xe0a;&#xe37;&#xe48;&#xe2d;&#xe2d;&#xe38;&#xe1a;&#xe31;&#xe15;&#xe34;&#xe40;&#xe2b;&#xe15;&#xe38;"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JProgressBar" name="statusBar">
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="statusBarStateChanged"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="wait">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#xe23;&#xe2d;&#xe23;&#xe31;&#xe1a;&#xe40;&#xe23;&#xe37;&#xe48;&#xe2d;&#xe07;"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="recieved">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#xe23;&#xe31;&#xe1a;&#xe40;&#xe23;&#xe37;&#xe48;&#xe2d;&#xe07;&#xe41;&#xe25;&#xe49;&#xe27;"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="operate">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#xe25;&#xe07;&#xe1e;&#xe37;&#xe49;&#xe19;&#xe17;&#xe35;&#xe48;"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="sendDepartment">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#xe19;&#xe33;&#xe2a;&#xe48;&#xe07;&#xe2b;&#xe19;&#xe48;&#xe27;&#xe22;&#xe07;&#xe32;&#xe19;"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="statusBackHome">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#xe01;&#xe25;&#xe31;&#xe1a;&#xe2b;&#xe19;&#xe49;&#xe32;&#xe41;&#xe23;&#xe01;"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="statusBackHomeActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>
