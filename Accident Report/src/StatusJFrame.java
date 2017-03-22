@@ -1,13 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/**
- *
- * @author Supakorn
- */
 public class StatusJFrame extends javax.swing.JFrame {
 
     /**
@@ -16,7 +7,7 @@ public class StatusJFrame extends javax.swing.JFrame {
     public StatusJFrame() {
         initComponents();
     }
-
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -70,22 +61,29 @@ public class StatusJFrame extends javax.swing.JFrame {
                         .addGap(156, 156, 156)
                         .addComponent(jLabel1))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(134, 134, 134)
+                        .addGap(32, 32, 32)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(19, 19, 19)
-                                .addComponent(wait)
-                                .addGap(49, 49, 49)
-                                .addComponent(recieved)
-                                .addGap(48, 48, 48)
-                                .addComponent(operate))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(sendDepartment)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(layout.createSequentialGroup()
                                     .addComponent(accidentName, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(statusBar, javax.swing.GroupLayout.PREFERRED_SIZE, 391, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(253, 253, 253))
+                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                    .addGap(8, 8, 8)
+                                    .addComponent(wait)
+                                    .addGap(34, 34, 34)
+                                    .addComponent(recieved)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(120, 120, 120)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(operate)
                                     .addComponent(statusBackHome, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                .addContainerGap(134, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(sendDepartment)
+                    .addComponent(statusBar, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(43, 43, 43))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -99,19 +97,22 @@ public class StatusJFrame extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(wait)
-                    .addComponent(sendDepartment)
+                    .addComponent(recieved)
                     .addComponent(operate)
-                    .addComponent(recieved))
-                .addGap(47, 47, 47)
+                    .addComponent(sendDepartment))
+                .addGap(112, 112, 112)
                 .addComponent(statusBackHome, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(174, Short.MAX_VALUE))
+                .addContainerGap(201, Short.MAX_VALUE))
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void statusBackHomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_statusBackHomeActionPerformed
-        // TODO add your handling code here:
+        //ReportInterface report = new ReportInterface();
+        //report.setVisible(true);
+        //setVisible(false);
     }//GEN-LAST:event_statusBackHomeActionPerformed
 
     private void statusBarStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_statusBarStateChanged
@@ -145,10 +146,12 @@ public class StatusJFrame extends javax.swing.JFrame {
         }
         //</editor-fold>
 
-        /* Create and display the form */
+        
+        
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new StatusJFrame().setVisible(true);
+                
             }
         });
     }
