@@ -27,6 +27,7 @@ public class StatusJFrame extends javax.swing.JFrame {
         statusBackHome = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 153, 102));
 
         accidentName.setText("ชื่ออุบัติเหตุ");
 
@@ -110,9 +111,9 @@ public class StatusJFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void statusBackHomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_statusBackHomeActionPerformed
-        //ReportInterface report = new ReportInterface();
-        //report.setVisible(true);
-        //setVisible(false);
+        HomeFrame homeFrame = new HomeFrame();
+        homeFrame.setVisible(true);
+        setVisible(false);
     }//GEN-LAST:event_statusBackHomeActionPerformed
 
     private void statusBarStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_statusBarStateChanged
